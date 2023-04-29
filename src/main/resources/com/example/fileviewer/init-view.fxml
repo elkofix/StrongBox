@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="234.0" prefWidth="359.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fileviewer.controller.InitController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+   <Label style="-fx-font-weight: BOLD;" text="CAJA FUERTE">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label text="Escriba la combinación para ingresar" />
+   <Label textFill="RED" fx:id="alert"/>
+   <TextFlow prefHeight="43.0" prefWidth="355.0" textAlignment="CENTER">
+      <children>
+         <TextField fx:id="textField1" prefHeight="40.0" prefWidth="50.0" />
+         <TextField fx:id="textField2" prefHeight="40.0" prefWidth="50.0" />
+         <TextField fx:id="textField3" prefHeight="40.0" prefWidth="50.0" />
+         <TextField fx:id="textField4" prefHeight="40.0" prefWidth="50.0" />
+         <TextField fx:id="textField5" prefHeight="40.0" prefWidth="50.0" />
+         <TextField fx:id="textField6" prefHeight="40.0" prefWidth="50.0" />
+      </children>
+   </TextFlow>
+    <Button onAction="#onOpenFileWindow" prefHeight="26.0" prefWidth="104.0" style="-fx-background-color: BLUE;" text="ABRIR" textFill="WHITE">
+      <font>
+         <Font name="Times New Roman" size="12.0" />
+      </font></Button>
+</VBox>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="321.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fileviewer.controller.ChangeController">
+
+    <Label contentDisplay="CENTER" layoutX="224.0" layoutY="22.0" style="-fx-font-weight: bold;" text="CAJA FUERTE" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+
+
+    <Label text="Digite la combinacion actual" />
+    <Label fx:id="alert" textFill="RED" />
+    <TextFlow prefHeight="43.0" prefWidth="355.0" textAlignment="CENTER">
+        <children>
+            <TextField fx:id="textField1" prefHeight="40.0" prefWidth="50.0" />
+            <TextField fx:id="textField2" prefHeight="40.0" prefWidth="50.0" />
+            <TextField fx:id="textField3" prefHeight="40.0" prefWidth="50.0" />
+            <TextField fx:id="textField4" prefHeight="40.0" prefWidth="50.0" />
+            <TextField fx:id="textField5" prefHeight="40.0" prefWidth="50.0" />
+            <TextField fx:id="textField6" prefHeight="40.0" prefWidth="50.0" />
+        </children>
+    </TextFlow>
+
+    <Label text="Digite la NUEVA combinacion" />
+    <TextFlow prefHeight="43.0" prefWidth="355.0" textAlignment="CENTER">
+        <children>
+            <TextField fx:id="textField12" prefHeight="40.0" prefWidth="50.0" />
+            <TextField fx:id="textField22" prefHeight="40.0" prefWidth="50.0" />
+            <TextField fx:id="textField32" prefHeight="40.0" prefWidth="50.0" />
+            <TextField fx:id="textField42" prefHeight="40.0" prefWidth="50.0" />
+            <TextField fx:id="textField52" prefHeight="40.0" prefWidth="50.0" />
+            <TextField fx:id="textField62" prefHeight="40.0" prefWidth="50.0" />
+        </children>
+    </TextFlow>
+
+    <HBox alignment="CENTER" prefHeight="40.0" prefWidth="570.0">
+        <children>
+
+            <Button fx:id="fileOpenBtn" contentDisplay="TOP" onAction="#onChangePassword" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: BLUE;" text="Cambiar Pass" textFill="WHITE">
+                <font>
+                    <Font name="Times New Roman Bold" size="14.0" />
+                </font>
+            </Button>
+            <HBox prefHeight="50.0" prefWidth="30.0" />
+            <Button onAction="#cerrarVentana" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: BLUE;" text="Cerrar Caja Fuerte" textAlignment="JUSTIFY" textFill="WHITE">
+                <font>
+                    <Font name="Times New Roman Bold" size="14.0" />
+                </font>
+            </Button>
+        </children>
+      <VBox.margin>
+         <Insets top="30.0" />
+      </VBox.margin>
+    </HBox>
+    <padding>
+        <Insets left="30.0" right="30.0" />
+    </padding>
+</VBox>

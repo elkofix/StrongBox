@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="321.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fileviewer.controller.FileController">
+   <Label layoutX="224.0" layoutY="22.0" style="-fx-font-weight: bold;" text="CAJA FUERTE" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label layoutX="203.0" layoutY="65.0" text="Este es el contenido de la caja fuerte" textAlignment="CENTER" />
+
+    <TextArea fx:id="fileViewTA">
+      <VBox.margin>
+         <Insets bottom="10.0" />
+      </VBox.margin></TextArea>
+   <HBox alignment="CENTER" prefHeight="40.0" prefWidth="570.0">
+      <children>
+      
+       <Button fx:id="fileOpenBtn" onAction="#onOpenChangeWindow" alignment="CENTER" contentDisplay="TOP" prefHeight="37.0" prefWidth="188.0" style="-fx-background-color: BLUE;" text="Cambiar Pass" textFill="WHITE">
+            <font>
+               <Font name="Times New Roman Bold" size="14.0" />
+            </font>
+         </Button>
+         <HBox prefHeight="100.0" prefWidth="200.0" />
+         <Button onAction="#cerrarVentana" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: BLUE;" text="Cerrar Caja Fuerte" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+               <Font name="Times New Roman Bold" size="14.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <padding>
+      <Insets left="30.0" right="30.0" />
+   </padding>
+</VBox>
